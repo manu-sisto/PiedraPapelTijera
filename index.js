@@ -6,11 +6,15 @@ for (let i = 0; i < opciones.length; i++) {
 }
 
 function manejarClick (evento) {
+    document.querySelectorAll(".opcion")[0].style.backgroundColor = "#EFEFEF"
+    document.querySelectorAll(".opcion")[1].style.backgroundColor = "#EFEFEF"
+    document.querySelectorAll(".opcion")[2].style.backgroundColor = "#EFEFEF"
     const jugadaMaquina = obtenerJugadaMaquina()
     document.querySelector("#jugada-maquina").textContent = jugadaMaquina;
     const resultado = comparar(evento.target.id, jugadaMaquina)
     document.querySelector("#resultado").textContent = resultado.toUpperCase();
     cambiarColor(resultado)
+    evento.target.style.backgroundColor = "blue"
 }
 
 function obtenerJugadaMaquina() {
