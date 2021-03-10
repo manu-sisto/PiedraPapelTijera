@@ -6,13 +6,11 @@ for (let i = 0; i < opciones.length; i++) {
 }
 
 function manejarClick (evento) {
-    //da un jugada de la maquina. 
     const jugadaMaquina = obtenerJugadaMaquina()
-    //va a comparar piedra con esa jugada
-    const resultado = comparar(evento.target.id, jugadaMaquina)
-    //muestra resultado en el div.
-    document.querySelector("#resultado").textContent = resultado;
     document.querySelector("#jugada-maquina").textContent = jugadaMaquina;
+    const resultado = comparar(evento.target.id, jugadaMaquina)
+    document.querySelector("#resultado").textContent = resultado.toUpperCase();
+    cambiarColor(resultado)
 }
 
 function obtenerJugadaMaquina() {
@@ -27,7 +25,7 @@ function comparar(valA, valB) {
     }
     if (valA === "piedra") {
         if (valB === "tijera") {
-            return "ganaste";
+            return "ganaste!";
         }
         if (valB === "papel") {
             return "perdiste";
@@ -38,15 +36,26 @@ function comparar(valA, valB) {
             return "perdiste";
         }
         if (valB === "piedra") {
-            return "ganaste";
+            return "ganaste!";
         }
     }
     if (valA === "tijera") {
         if (valB === "papel") {
-            return "ganaste";
+            return "ganaste!";
         }
         if (valB === "piedra") {
             return "perdiste";
         }
     }
 }
+
+function cambiarColor(res){
+    if (res === "ganaste!") {
+        document.querySelector("#resultado").style.color = "green";
+    } else if (res === "empataste") {
+        document.querySelector("#resultado").style.color = "yellow";
+    } else {
+        document.querySelector("#resultado").style.color = "red";
+    }
+}
+

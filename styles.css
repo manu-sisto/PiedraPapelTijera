@@ -1,0 +1,49 @@
+
+.box{
+    background-color: lightblue;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    margin: 18px 0px 18px 0px;
+    border: solid 2px black;
+}
+
+.botones{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.botones button{
+    flex: 1;
+    font-weight: 700;
+    text-shadow: lightslategray;
+    font-size: 22px;
+}
+
+.jugadaMaquina{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin:auto;
+    background-color: lightsalmon;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcion{
+    height: 50px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#resultado{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: black;
+    color: red;
+}

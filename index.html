@@ -3,16 +3,21 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Piedra, Papel o Tijera por M.Sisto</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="piedra" class="opcion">Piedra</button>
-    <button id="papel" class="opcion">Papel</button>
-    <button id="tijera" class="opcion">Tijera</button>
+    <h3 class="box">Elegi tu jugada:</h3>
+    <div class="botones">
+        <button id="piedra" class="opcion">Piedra</button>
+        <button id="papel" class="opcion">Papel</button>
+        <button id="tijera" class="opcion">Tijera</button>
+    </div>
 
-    <div id="jugada-maquina"></div>
-
+    <h3 class="box">la maquina juega:</h3>
+    <div class="jugadaMaquina" id="jugada-maquina">esperando tu jugada...</div>
+    <h5 class="box">como te fue:</h5>
     <div id="resultado"></div>
 
     <script src="index.js"></script>
