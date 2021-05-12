@@ -30,7 +30,7 @@
 
 body{
     margin:auto;
-    background-color: lightsalmon;
+    background-color: cyan;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -46,4 +46,11 @@ body{
     text-align: center;
     text-shadow: black;
     color: red;
+    font-weight: 50px;
+}
+
+#bart{
+    margin-top: 40px;
+    border: solid 4px black;
+    max-block-size: 200px;
 }

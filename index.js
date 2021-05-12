@@ -57,7 +57,7 @@ function cambiarColor(res){
     if (res === "ganaste!") {
         document.querySelector("#resultado").style.color = "green";
     } else if (res === "empataste") {
-        document.querySelector("#resultado").style.color = "yellow";
+        document.querySelector("#resultado").style.color = "darkgoldenrod";
     } else {
         document.querySelector("#resultado").style.color = "red";
     }
